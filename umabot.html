@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading... Astral</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+  <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="aurora">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </div>
+
+  <div class="wrap">
+    <header>
+      <a href="index.html" class="back-btn">
+        <span class="back-arrow">←</span> Home
+      </a>
+    </header>
+
+    <div class="page-hero">
+      <div class="page-hero-label" id="hero-label">Project</div>
+      <h1 id="hero-title">Loading…</h1>
+      <p class="subtitle" id="hero-subtitle"></p>
+      <div class="page-hero-divider"></div>
+    </div>
+
+    <!-- Components render here -->
+    <div id="components"></div>
+  </div>
+
+
+  <script>
+  const PAGE_CONFIG = {
+    title:      "Umamusume Discord Bot",
+    subtitle:   "Python · Pycord",
+    accentColor: "#fc1212",   // hex — tints the header label & divider
+
+    components: [
+      {
+        type: "Text",
+        content: `
+# Umamusume Discord Bot
+
+A fully-featured Discord bot themed around **Umamusume: Pretty Derby**, the popular
+horse-girl racing game. Built in Python using *pycord*.
+Players register their Uma, do training, manage clubs,
+and race, all from within Discord.
+        `
+      },
+      {
+        type: "Photo",
+        url: "resources/umabot_home.jpeg",
+        align: "center",
+        caption: "Career Training System"
+      },
+      {
+        type: "Photo",
+        url: "resources/umabot_training.png",
+        align: "center",
+        caption: "Stat display and inventory system"
+      },
+      {
+        type: "Text",
+        content: `
+## Features
+
+- Career system with training and races
+- Clubs and leaderboards
+- Good looking UI via \`UICord\`
+- Inventory system with items and support card slots
+`
+      },
+      {
+        type: "ButtonLink",
+        label: "← Home",
+        color: "#ef1212",
+        url: "index.html"
+      }
+    ]
+  };
+  </script>
+
+  <script src="renderer.js"></script>
+
+
+</body>
+</html>
