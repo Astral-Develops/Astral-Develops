@@ -25,6 +25,7 @@
         <span class="back-arrow">←</span> Home
       </a>
     </header>
+
     <div class="page-hero">
       <div class="page-hero-label" id="hero-label">Project</div>
       <h1 id="hero-title">Loading…</h1>
@@ -34,55 +35,50 @@
 
     <!-- Components render here -->
     <div id="components"></div>
-    
-  
   </div>
 
 
   <script>
   const PAGE_CONFIG = {
-    title:      "Umamusume Discord Bot",
-    subtitle:   "Python · Pycord",
-    accentColor: "#fc1212",   // hex — tints the header label & divider
+    title:      "H1387Lmao",
+    subtitle:   "About me",
+    accentColor: "#ddad00",   // hex — tints the header label & divider
 
     components: [
       {
-        type: "Text",
-        content: `
-# Umamusume Discord Bot
-
-A fully-featured Discord bot themed around **Umamusume: Pretty Derby**, the popular
-horse-girl racing game. Built in Python using *pycord*.
-Players register their Uma, do training, manage clubs,
-and race, all from within Discord.
-        `
-      },
-      {
         type: "Photo",
-        url: "resources/umabot_home.jpeg",
-        align: "center",
-      },
-      {
-        type: "Photo",
-        url: "resources/umabot_training.png",
-        align: "center",
+        align: 'center',
+        url: "resources/h1387av.png"
       },
       {
         type: "Text",
         content: `
-## Features
+# Who Am I?
+I am a 14 year old self-taught programmer, specializing in Python and Lua
 
-- Career system with training and races
-- Clubs and leaderboards
-- Good looking UI via \`UICord\`
-- Inventory system with items and support card slots
+        
+I started programming when I was 8, and mastered python when I was 10
+
+        
+I am the lead programmer for AstralDev and created \`UICord\` and \`Umabot\`    
+`
+      },
+      {
+        type: "Text",
+        content: `
+# Interests
+I love anime, with \`Konosuba\` and \`Bocchi the rock\` being my favorites.
+
+I love writing stories and programming.
+
+I also love Gacha games like Umamusume
 `
       },
       {
         type: "ButtonLink",
-        label: "← Home",
-        color: "#ef1212",
-        url: "index.html"
+        label: "My GitHub",
+        color: "#676767",
+        url: "https://github.com/H1387Lmao"
       }
     ]
   };
